@@ -1,0 +1,345 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  cursor: url(images/mouse.ico), default !important;
+}
+i {
+  font-style: normal;
+}
+li {
+  list-style: none;
+}
+@font-face {
+  font-family: 'iconfont';
+  src: url('fonts/iconfont.eot');
+  src: url('fonts/iconfont.eot?#iefix') format('embedded-opentype'), url('fonts/iconfont.woff2') format('woff2'), url('fonts/iconfont.woff') format('woff'), url('fonts/iconfont.ttf') format('truetype'), url('fonts/iconfont.svg#iconfont') format('svg');
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+body {
+  background-color: #ffffff;
+}
+.main {
+  min-width: 1535px;
+  min-height: 650px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url(images/iphone8plus白色.png) no-repeat center;
+  background-size: 50%;
+}
+.homebtn {
+  position: absolute;
+  top: 81%;
+  left: 50%;
+  border-radius: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+}
+.main_cont {
+  width: 260px;
+  height: 460px;
+  position: relative;
+  background: url(images/bg.jpg) no-repeat center;
+  background-size: cover;
+  overflow: hidden;
+}
+@keyframes bgscale {
+  100% {
+    background-size: 115%;
+  }
+}
+.info_tab {
+  height: 12.5px;
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+  color: #ffffff;
+}
+.info_tab_status {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: -5px;
+  font-family: '蘋方-簡';
+  transform: scale(0.8);
+  -webkit-transform: scale(0.8);
+}
+.info_tab_status i span {
+  font-family: Myriad Pro;
+  margin-left: 1.5px;
+}
+.info_tab_status span {
+  font-family: "iconfont" !important;
+  margin-left: 5px;
+}
+.indo_tab_clock {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5px;
+}
+.indo_tab_clock p {
+  transform: scale(0.8);
+  -webkit-transform: scale(0.8);
+}
+.info_tab_cell {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.info_tab_cell i {
+  margin-right: -2px;
+  transform: scale(0.8);
+  -webkit-transform: scale(0.8);
+}
+.info_tab_cell span {
+  font-family: "iconfont" !important;
+  font-size: 18px;
+  margin-right: 2px;
+}
+.allapps {
+  display: flex;
+  margin-top: 15px;
+  justify-content: space-evenly;
+  height: 447.5px;
+  position: relative;
+  font-family: '蘋方-簡';
+}
+.allapps .conapp {
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  align-items: center;
+  font-size: 10px;
+}
+.allapps .conapp .app_icon {
+  background-color: antiquewhite;
+  width: 37.5px;
+  height: 37.5px;
+  border-radius: 22.5%;
+}
+.allapps .conapp .app_name {
+  margin-top: 2px;
+}
+.allapps .mail {
+  background: url(images/mail.png) center no-repeat;
+  background-size: 102%;
+}
+.allapps .photoapp {
+  background: url(images/photoapp.png) center no-repeat;
+  background-size: 102%;
+}
+.allapps .weatherapp {
+  background: url(images/weather.png) center no-repeat;
+  background-size: 102%;
+}
+.appcon {
+  position: absolute;
+  width: 37.5px;
+  height: 37.5px;
+  top: 27.2px;
+  left: 24.7px;
+  border-radius: 22.5%;
+  display: none;
+  overflow: hidden;
+}
+@keyframes open {
+  100% {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
+}
+.footer {
+  background-color: rgba(255, 196, 128, 0.6);
+  filter: brightness(1.1);
+  width: 260px;
+  height: 57.5px;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.footer .footer_appicon {
+  background-color: antiquewhite;
+  width: 37.5px;
+  height: 37.5px;
+  border-radius: 22.5%;
+}
+.footer .informapp {
+  background: url(images/inform.png) no-repeat center;
+  background-size: 110%;
+}
+.footer .telapp {
+  background: url(images/tel.png) no-repeat center;
+  background-size: 110%;
+}
+.footer .browserapp {
+  background: url(images/browser.png) no-repeat center;
+  background-size: 105%;
+}
+.footer .itunesapp {
+  background: url(images/itunes.png) no-repeat center;
+  background-size: 105%;
+}
+@keyframes footerscale {
+  100% {
+    height: 67.5px;
+  }
+}
+@keyframes footer_appsmall {
+  100% {
+    transform: scale(0.95);
+  }
+}
+.startupPage {
+  height: 460px;
+  background-color: white;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.LoginPage {
+  height: 460px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aquamarine;
+  z-index: 3;
+  flex: 1;
+}
+.guidePage {
+  height: 460px;
+  background-color: #adadad;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+.guidePage .guideimgdot {
+  position: absolute;
+  top: 92%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.guidePage .guideimgdot li {
+  width: 3px;
+  height: 3px;
+  margin: 0 3px;
+  border: 1px solid #f97869;
+  border-radius: 50%;
+  position: relative;
+}
+.guidePage .guideimgdot .dotactive {
+  border-radius: 0 !important;
+  transform: rotate(45deg);
+  border: 0 !important;
+  border-bottom-right-radius: 20% !important;
+  background-color: #f97869;
+  animation: dotactive 0.8s;
+  animation-fill-mode: forwards;
+}
+.guidePage .guideimgdot .dotactive:before {
+  content: '';
+  width: 3px;
+  height: 3px;
+  background-color: #f97869;
+  position: absolute;
+  left: -2px;
+  border-radius: 100%;
+}
+.guidePage .guideimgdot .dotactive:after {
+  content: '';
+  width: 3px;
+  height: 3px;
+  background-color: #f97869;
+  position: absolute;
+  top: -2px;
+  border-radius: 100%;
+}
+.guidePage .guideimgbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s ease-in-out;
+}
+.guidePage .guideimg {
+  width: 260px;
+  height: 460px;
+}
+.guidePage .guione {
+  background: url(images/引导页1.jpg) no-repeat center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.guidePage .guitwo {
+  transition: 1s ease-in-out;
+  background: url(images/引导页2.jpg) no-repeat center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.guidePage .guithree {
+  transition: 1s ease-in-out;
+  background: url(images/引导页3.jpg) no-repeat center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@keyframes dotactive {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.allPage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 780px;
+  height: 460px;
+  transition: 1s ease-in-out;
+}
+.fapp .logo {
+  background: url(images/logo.jpg) no-repeat center;
+  background-size: cover;
+}
